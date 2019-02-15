@@ -1,20 +1,20 @@
-import java.util.ArrayList;
+import java.util.Vector;
 
-public class ArrayListStack <E> extends AbstractStack<E> {
+public class VectorStack<E> extends AbstractStack<E> {
 
     /**
-     * la varaiable stack es el ArrayList que almacenara la informacion
+     * la varaiable stack es el Vector que almacenara la informacion
      */
-    private ArrayList<E> stack = new ArrayList<>();
+    protected Vector<E> stack = new Vector<>();
 
     /**
      * Un item es agregado al arreglo en su ultima posicion
-     * @param item generico
+     * @param item
      */
     public void push(E item){
         //pre:
         //post: item is added to the stack
-        this.stack.add(item);
+        stack.addElement(item);
     }
 
     /**
@@ -59,6 +59,4 @@ public class ArrayListStack <E> extends AbstractStack<E> {
         //post: return the size of the stack
         return this.stack.size();
     }
-
-
 }
