@@ -1,5 +1,6 @@
 /**
  * List Factory
+ * @author Juanfer De Leon
  */
 public class ListFactory {
 
@@ -16,7 +17,7 @@ public class ListFactory {
             stack = new SinglyLinkedList();
         } else if (listType.equals("D")){
             stack = new DoublyLinkedList();
-        } else {
+        } else if (listType.equals("L")){
             stack = new CircularList();
         }
 
