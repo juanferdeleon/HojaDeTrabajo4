@@ -20,14 +20,6 @@ public interface iLista<E> {
     // pre: list is not empty
     // post: removes last value from list
 
-    E remove();
-    // pre: list has at least one element
-    // post: removes last value found in list
-
-    E get();
-    // pre: list has at least one element
-    // post: returns last value found in list
-
     E peek();
-    
+
 }

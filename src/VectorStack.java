@@ -14,7 +14,7 @@ public class VectorStack<E> extends AbstractStack<E> {
     public void push(E item){
         //pre:
         //post: item is added to the stack
-        stack.addElement(item);
+        this.stack.addElement(item);
     }
 
     /**
@@ -59,4 +59,6 @@ public class VectorStack<E> extends AbstractStack<E> {
         //post: return the size of the stack
         return this.stack.size();
     }
+
+
 }
