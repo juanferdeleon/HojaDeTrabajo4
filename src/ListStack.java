@@ -1,3 +1,8 @@
+/**
+ *
+ * @param <E> Dato Generico
+ * @author Juanfer De Leon
+ */
 public class ListStack<E> extends AbstractStack<E>{
 
     protected iLista<E> stack;

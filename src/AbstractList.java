@@ -1,6 +1,7 @@
 /**
- *
- * @param <E>
+ * Clase abstracta de Lista
+ * @param <E> Dato Generico
+ * @author Juanfer De Leon
  */
 public abstract class AbstractList<E> implements iLista<E> {
     /**
