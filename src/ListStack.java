@@ -39,7 +39,7 @@ public class ListStack<E> extends AbstractStack<E>{
     public boolean empty(){
         //pre:
         //post: return true if empty
-        if (stack != null){
+        if (this.stack != null){
             return false;
         }
         return true;

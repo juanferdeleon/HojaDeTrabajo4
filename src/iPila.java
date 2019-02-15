@@ -18,7 +18,7 @@ public interface iPila<E> {
 
 
     /**
-     * The top value (next to be popped) is returned
+     * The top value is returned
      * @return
      */
     E peek();

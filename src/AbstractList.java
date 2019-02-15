@@ -1,21 +1,19 @@
 /**
- * Interfaz iLista
- * @param <E> Dato Generico
- * @author Juanfer De Leon
+ *
+ * @param <E>
  */
-public interface iLista<E> {
-
+public abstract class AbstractList<E> implements iLista<E> {
     /**
      * An item is added to list
      * @param value
      */
-    void addLast(E value);
+    public abstract void addLast(E value);
 
     /**
      * The most recently pushed item is removed and returned
      * @return
      */
-    E removeLast();
+    public abstract E removeLast();
     // pre: list is not empty
     // post: removes last value from list and returns last value in list
 
@@ -23,7 +21,7 @@ public interface iLista<E> {
      * The top value is returned
      * @return
      */
-    E getLast();
+    public abstract E getLast();
     // pre: list is not empty
     // post: returns last value in list
 
@@ -31,14 +29,14 @@ public interface iLista<E> {
      * Returns true if and only if the stack is empty
      * @return
      */
-    boolean isEmpty();
+    public abstract boolean isEmpty();
     // post: returns true if list has no elements
 
     /**
      *returns the number of elements in the stack
      * @return
      */
-    int size();
+    public abstract int size();
     // post: returns number of elements in list
 
 }
