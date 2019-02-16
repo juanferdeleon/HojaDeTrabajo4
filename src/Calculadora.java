@@ -5,6 +5,29 @@ public class Calculadora implements iCalculadora {
 
     double resultado;
 
+    private static iCalculadora firstInstance = null;
+
+    /**
+     * Calculator constructur
+     * Is private due to we want to have only one
+     * instance of it
+     */
+    private Calculadora(){}
+
+    /**
+     * Method that checks if it already exists
+     * an instance of the object Calculadora
+     * @return the instance
+     */
+    public iCalculadora getInstance(){
+
+        if (firstInstance == null){
+            firstInstance = new Calculadora();
+        }
+
+        return firstInstance;
+    }
+
     /**
      * Método para hacer la suma de la calculadora
      *
