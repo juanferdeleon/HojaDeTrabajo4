@@ -2,6 +2,7 @@ public class DoublyLinkedList<E> extends AbstractList<E>{
 	protected int count;
 	protected DoublyLinkedNode<E> head;
 	protected DoublyLinkedNode<E> tail;
+	protected Node<E> head2;
 	public DoublyLinkedList()
 	// post: constructs an empty list
 	{
@@ -29,18 +30,14 @@ public class DoublyLinkedList<E> extends AbstractList<E>{
 	if (head == null) head = tail;
 	count++;
 	}
-	public E removeLast()
+	public E removeFirst()
 	// pre: list is not empty
-	// post: removes value from tail of list
+	// post: removes and returns value from beginning of list
 	{
-	DoublyLinkedNode<E> temp = tail;
-	tail = tail.previous();
-	if (tail == null) {
-	head = null;
-	} else {
-	tail.setNext(null);
-	}
+	Node<E> temp = head2;
+	head2 = head2.next(); // move head down list
 	count--;
 	return temp.value();
 	}
+
 }
