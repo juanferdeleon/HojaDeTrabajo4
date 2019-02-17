@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Stack Factory
  * @author Juanfer De Leon
@@ -9,7 +11,7 @@ public class StackFactory {
      * @param stackType
      * @return Specific stack type is returned
      */
-    public iPila makeStack(String stackType){
+    public iPila makeStack(String stackType, String listType){
 
         iPila stack = null;
 
@@ -18,7 +20,7 @@ public class StackFactory {
         } else if (stackType.equals("V")){
             stack = new VectorStack();
         } else if(stackType.equals("L")){
-            stack = new ListStack();
+            stack = new ListStack(listType);
         }
 
         return stack;

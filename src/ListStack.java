@@ -4,8 +4,12 @@
  * @author Juanfer De Leon
  */
 public class ListStack<E> extends AbstractStack<E>{
-
     protected iLista<E> stack;
+
+    ListStack(String listType){
+        ListFactory listFactory = new ListFactory();
+        stack = listFactory.makeList(listType);
+    }
 
     /**
      * An item is added to stack

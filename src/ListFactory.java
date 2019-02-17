@@ -17,7 +17,7 @@ public class ListFactory {
             stack = new SinglyLinkedList();
         } else if (listType.equals("D")){
             stack = new DoublyLinkedList();
-        } else if (listType.equals("L")){
+        } else if (listType.equals("C")){
             stack = new CircularList();
         }
 
