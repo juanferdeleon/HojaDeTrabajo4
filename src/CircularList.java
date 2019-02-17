@@ -41,6 +41,7 @@ public class CircularList<E> extends AbstractList<E>
         return tail.data;
     }
 
+
 	// lo dificil es quitar el elemento de la cola
 
 	public E removeLast()
@@ -64,6 +65,7 @@ public class CircularList<E> extends AbstractList<E>
 	   return temp.value();
 	}
 
-
-
+	public int size(){
+	    return 1;
+    }
 }

@@ -10,7 +10,6 @@ public class SinglyLinkedList<E> extends AbstractList<E>
       head = null;
       count = 0;
    }
-   @Override
    public int size()
    // post: returns number of elements in list
   {

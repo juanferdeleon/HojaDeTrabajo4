@@ -31,7 +31,7 @@ public interface iLista<E> {
      *returns the number of elements in the stack
      * @return
      */
-//    int size();
-//    // post: returns number of elements in list
+    int size();
+    //post: returns number of elements in list
 
 }

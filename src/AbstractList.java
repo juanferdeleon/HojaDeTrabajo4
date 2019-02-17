@@ -30,7 +30,7 @@ public abstract class AbstractList<E> implements iLista<E> {
      *returns the number of elements in the stack
      * @return
      */
-//    public abstract int size();
+    public abstract int size();
     // post: returns number of elements in list
 
 }
