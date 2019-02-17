@@ -96,7 +96,7 @@ public class Main {
      * @return
      */
     public static String mainMenu(){
-        return "\tMenu\n" +
+        return "\n\n\tMenu\n" +
                 "1. ArrayList\n" +
                 "2. Vector\n" +
                 "3. Lista\n" +
@@ -109,7 +109,7 @@ public class Main {
      * @return
      */
     public static String secondMenu(){
-        return "\tMenu Implementacion de Lista\n" +
+        return "\n\n\tMenu Implementacion de Lista\n" +
                 "1. Simplemente encadenadas\n" +
                 "2. Doblemente encadenadas\n" +
                 "3. Lista circular\n" +
