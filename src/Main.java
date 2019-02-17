@@ -55,7 +55,8 @@ public class Main {
                     }
 
                     break;
-
+                case "4":
+                    whantsToContinue = false;
                 default:
                     System.out.println("La opcion ingresada no es valida");
             }
@@ -77,7 +78,7 @@ public class Main {
      */
     public static iPila readFile(Calculadora calculadora, iPila stack) throws FileNotFoundException, IOException {
 
-        File file = new File("../datos.txt");
+        File file = new File("datos.txt");
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
@@ -99,6 +100,7 @@ public class Main {
                 "1. ArrayList\n" +
                 "2. Vector\n" +
                 "3. Lista\n" +
+                "4. Salir\n" +
                 "Implementacion deseada para el stack: ";
     }
 
@@ -108,9 +110,9 @@ public class Main {
      */
     public static String secondMenu(){
         return "\tMenu Implementacion de Lista\n" +
-                "1. Simplemente encadenadas" +
-                "2. Doblemente encadenadas" +
-                "3. Lista circular" +
+                "1. Simplemente encadenadas\n" +
+                "2. Doblemente encadenadas\n" +
+                "3. Lista circular\n" +
                 "Implementacion deseada para la lista: ";
     }
 }

@@ -32,6 +32,15 @@ public class SinglyLinkedList<E> extends AbstractList<E>
      count--;
      return temp.value();
   }
+
+    public E removeLast() {
+       return head.data;
+    }
+
+    public E getLast() {
+        return head.data;
+    }
+
    public E getFirst()
   // pre: list is not empty
   // post: returns first value in list
