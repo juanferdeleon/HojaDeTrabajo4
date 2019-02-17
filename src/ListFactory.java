@@ -1,24 +1,25 @@
 /**
  * List Factory
  * @author Juanfer De Leon
+ * @param <E>
  */
-public class ListFactory {
+public class ListFactory<E> {
 
     /**
      * Specific list type is created
      * @param listType
      * @return Specific list type is returned
      */
-    public iLista makeList(String listType){
+    public iLista<E> makeList(String listType){
 
-        iLista stack = null;
+        iLista<E> stack = null;
 
         if (listType.equals("S")){
-            stack = new SinglyLinkedList();
+            stack = new SinglyLinkedList<>();
         } else if (listType.equals("D")){
-            stack = new DoublyLinkedList();
+            stack = new DoublyLinkedList<>();
         } else if (listType.equals("L")){
-            stack = new CircularList();
+            stack = new CircularList<>();
         }
 
         return stack;
