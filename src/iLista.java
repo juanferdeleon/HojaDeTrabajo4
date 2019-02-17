@@ -28,17 +28,10 @@ public interface iLista<E> {
     // post: returns last value in list
 
     /**
-     * Returns true if and only if the stack is empty
-     * @return
-     */
-    boolean isEmpty();
-    // post: returns true if list has no elements
-
-    /**
      *returns the number of elements in the stack
      * @return
      */
-    int size();
-    // post: returns number of elements in list
+//    int size();
+//    // post: returns number of elements in list
 
 }

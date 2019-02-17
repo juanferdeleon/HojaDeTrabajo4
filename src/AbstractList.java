@@ -27,17 +27,10 @@ public abstract class AbstractList<E> implements iLista<E> {
     // post: returns last value in list
 
     /**
-     * Returns true if and only if the stack is empty
-     * @return
-     */
-    public abstract boolean isEmpty();
-    // post: returns true if list has no elements
-
-    /**
      *returns the number of elements in the stack
      * @return
      */
-    public abstract int size();
+//    public abstract int size();
     // post: returns number of elements in list
 
 }

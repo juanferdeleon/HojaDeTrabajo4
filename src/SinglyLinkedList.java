@@ -10,7 +10,7 @@ public class SinglyLinkedList<E> extends AbstractList<E>
       head = null;
       count = 0;
    }
-   @Override 
+   @Override
    public int size()
    // post: returns number of elements in list
   {
@@ -39,7 +39,7 @@ public class SinglyLinkedList<E> extends AbstractList<E>
   {
       return head.value();
   }
-   @Override 
+   @Override
   public void addLast(E value)
   // post: adds value to end of list
   {
@@ -53,20 +53,20 @@ public class SinglyLinkedList<E> extends AbstractList<E>
          {
                 finger = finger.next();
          }
-		 
+
          finger.setNext(temp);
       } else head = temp;
-	  
+
 	  count++;
-	  
+
    }
-   
+
    public boolean contains(E value)
    // pre: value is not null
    // post: returns true iff value is found in list
   {
       Node<E> finger = head;
-	  
+
       while (finger != null &&
              !finger.value().equals(value))
      {

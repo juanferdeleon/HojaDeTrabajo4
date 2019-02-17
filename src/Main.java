@@ -77,7 +77,7 @@ public class Main {
      */
     public static iPila readFile(Calculadora calculadora, iPila stack) throws FileNotFoundException, IOException {
 
-        File file = new File("../numeros.txt");
+        File file = new File("../datos.txt");
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 

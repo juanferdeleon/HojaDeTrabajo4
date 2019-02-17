@@ -1,7 +1,7 @@
 public class CircularList<E> extends AbstractList<E>
 {
 
-	protected Node<E> tail; 
+	protected Node<E> tail;
 	protected int count;
 
 	public CircularList()
@@ -10,7 +10,7 @@ public class CircularList<E> extends AbstractList<E>
 	   tail = null;
 	   count = 0;
 	}
-	
+
 	public void addFirst(E value)
 	// pre: value non-null
 	// post: adds element to head of list
@@ -25,8 +25,8 @@ public class CircularList<E> extends AbstractList<E>
 	   }
 	   count++;
 	}
-	
-	
+
+
 	public void addLast(E value)
 	// pre: value non-null
 	// post: adds element to tail of list
@@ -35,10 +35,14 @@ public class CircularList<E> extends AbstractList<E>
 	   addFirst(value);
 	   tail = tail.next();
 	}
-	
-	
+
+    public E getLast()
+    {
+        return tail.data;
+    }
+
 	// lo dificil es quitar el elemento de la cola
-	
+
 	public E removeLast()
 	// pre: !isEmpty()
 	// post: returns and removes value from tail of list
@@ -59,4 +63,7 @@ public class CircularList<E> extends AbstractList<E>
 	   count--;
 	   return temp.value();
 	}
-	}
+
+
+
+}
