@@ -1,0 +1,38 @@
+VENTAJAS
+
+La variable singleton no obtendrá memoria hasta que se llame por primera
+ vez a la propiedad o función designada para devolver la referencia. Este
+ tipo de creación de instancias es muy útil si su clase de singleton es un 
+recurso intenso.
+
+En la inicialización estática, la memoria se asigna a la variable en el 
+momento en que se declara. La creación de la instancia se lleva a cabo
+cuando se accede a cualquiera de las clases singleton miembro por primera
+ vez. La principal ventaja de este tipo de implementación es que el CLR se
+ encarga automáticamente de las condiciones de carrera que expliqué en una
+ instanciación perezosa. No hay cambios de código significativos en 
+la implementación de singleton cuando se pasa de la creación de 
+instancias perezosa a la inicialización estática. El único  cambio es que 
+la parte de creación de objetos se mueve al lugar donde estamos declarando 
+la variable.
+
+
+DESVENTAJAS
+
+Una clase de singleton tiene la responsabilidad de crear una instancia 
+de sí misma junto con otras responsabilidades comerciales. Sin embargo, 
+este problema se puede resolver delegando la parte de creación a un 
+objeto de fábrica.
+
+Las clases singleton no pueden ser subclasificadas.
+
+Singletons puede ocultar dependencias. Una de las características de una 
+arquitectura de sistema eficiente es minimizar las dependencias entre
+ clases. Esto lo ayudará a realizar las pruebas unitarias y 
+al aislar cualquier parte del programa a un ensamblaje separado. Un
+ singleton te hará sacrificar esta característica en tu aplicación. 
+Como la parte de creación de objetos es invisible para nosotros, no 
+podemos esperar que el constructor de singleton acepte ningún parámetro. 
+Este contratiempo puede parecer poco importante a primera vista, pero a 
+medida que aumenta la complejidad del software, se limitará la 
+flexibilidad del programa.
