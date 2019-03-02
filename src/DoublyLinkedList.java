@@ -5,6 +5,8 @@ import java.util.NoSuchElementException;
  * @param <E>
  * @author Juanfer De Leon
  */
+// Codigo utilizado de geeksforgeeks
+	// la pagina: https://www.geeksforgeeks.org/doubly-linked-list/
 public class DoublyLinkedList<E> extends AbstractList<E>{
 
     private Node head;
