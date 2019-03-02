@@ -1,6 +1,7 @@
 public class SinglyLinkedList<E> extends AbstractList<E>
 {
-
+	// Codigo utilizado de Mohd Sanad Zaki Rizvi 
+	// de la pagina https://www.hackerearth.com/practice/data-structures/linked-list/singly-linked-list/tutorial/
    protected int count; // list size
    protected Node<E> head; // ref. to first element
 
