@@ -1,4 +1,5 @@
 public class DoublyLinkedNode<E> {
+    // Codigo utilizado del libro de clase 
     protected E data;
     protected DoublyLinkedNode<E> nextElement;
     protected DoublyLinkedNode<E> previousElement;
