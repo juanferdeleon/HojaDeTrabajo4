@@ -1,6 +1,7 @@
 public class CircularList<E> extends AbstractList<E>
 {
-
+	// Codigo utilizado de geeksforgeeks
+	// pagina:: https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/
 	protected Node<E> tail;
 	protected int count;
 
